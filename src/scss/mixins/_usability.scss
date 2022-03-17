@@ -1,0 +1,15 @@
+@mixin hover {
+  text-decoration: none;
+  color: var(--color-violet);
+}
+
+@mixin focus {
+  outline: 2px solid var(--color-purple);
+  text-decoration: none;
+}
+
+@mixin active {
+  @include mobile {
+    color: var(--color-purple);
+  }
+}

@@ -1,0 +1,120 @@
+.search {
+  @include flex-all-sb;
+
+  color: var(--color-light);
+  transition: color 0.3s ease-in-out;
+
+  &__input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+    padding-bottom: 4px;
+    width: 219px;
+    font-weight: 400;
+    font-size: 18px;
+    color: currentColor;
+
+    &::placeholder {
+      color: var(--color-light);
+      opacity: 0.85;
+    }
+
+    @include big-tablet {
+      &::placeholder {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__btn {
+    margin-right: 6px;
+    padding: 0;
+    color: currentColor;
+
+    svg {
+      display: block;
+      margin-right: 4px;
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    &--mobile {
+
+      svg {
+        margin-right: 0;
+        width: 29px;
+        height: 29px;
+
+        @include mobile {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  &:focus-within {
+    outline: 2px solid var(--color-purple);
+    color: var(--color-heliotrope);
+
+    @include big-tablet {
+      outline: none;
+    }
+  }
+
+  &:hover {
+    color: var(--color-heliotrope);
+
+    input {
+      border-color: currentColor;
+    }
+
+    @include mobile {
+      color: var(--color-light);
+    }
+  }
+
+  &--mobile {
+    position: absolute;
+    left: calc(100% - 79px);
+    display: none;
+    width: 25.5vw;
+    height: 98%;
+    background-color: var(--color-black);
+    transition: left 0.3s ease-in-out;
+
+    input {
+      position: absolute;
+      left: 40px;
+      top: 51%;
+      width: 21vw;
+      opacity: 0;
+      transform: translateY(-50%);
+      transition: opacity 0.3s;
+
+      @include small-tablet {
+        width: calc(100% - 92px);
+      }
+
+      @include mobile {
+        left: 76px;
+        bottom: 26px;
+        width: calc(100% - 140px);
+      }
+    }
+
+    @include big-tablet {
+      display: flex;
+      align-items: unset;
+    }
+
+    @include small-tablet {
+      width: calc(100% - 100px);
+    }
+
+    @include mobile {
+      padding-right: 15px;
+      padding-left: 49px;
+      width: 100%;
+    }
+  }
+}

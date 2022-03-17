@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -29,6 +30,18 @@ img {
 
 a {
   text-decoration: none;
+
+  &:focus {
+    @include focus;
+  }
+
+  &:hover {
+    @include hover;
+  }
+
+  &:active {
+    @include active;
+  }
 }
 
 .site-container {
@@ -36,7 +49,8 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -104,4 +118,11 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.input {
+  outline: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
 }

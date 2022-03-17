@@ -3,15 +3,27 @@
 :root {
   // base
   --font-family: "OpenSans", sans-serif;
-  --content-width: 1170px;
-  --container-offset: 15px;
+  --content-width: 1600px;
+  --container-offset: 50px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --color-light: #fff;
+  --color-black: #000;
+  --color-dove-gray: #666666;
+  --color-mine-shaft: #333333;
+  --color-dusty-gray: #999999;
+  --color-silver: #cacaca;
+  --color-gallery: #ececec;
+  --color-primary: #9d5cd0;
+  --color-primary50: rgba(157, 92, 208, 0.5);
+  --color-purple: #7943a4;
+  --color-heliotrope: #c283f3;
+  --color-biloba: #d1a9f0;
 
 
   // burger
-  --burger-width: 36px;--burger-height: 28px;
+  --burger-width: 36px;
+  --burger-height: 28px;
   --burger-line-height: 4px;
 }
