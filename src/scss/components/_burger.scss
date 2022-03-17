@@ -1,0 +1,55 @@
+.burger {
+  position: relative;
+  display: none;
+  width: var(--burger-width);
+  height: var(--burger-height);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--burger-line-height);
+
+    @include mobile {
+      height: 2px;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: var(--burger-line-height);
+
+    @include mobile {
+      height: 2px;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 78%;
+    height: var(--burger-line-height);
+    background-color: var(--color-light);
+    transform: translateY(-50%);
+
+    @include mobile {
+      height: 2px;
+    }
+  }
+
+  @include tablet {
+    display: block;
+  }
+
+  @include mobile {
+    width: 20px;
+    height: 15px;
+  }
+}

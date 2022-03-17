@@ -4,5 +4,8 @@
 @import "fonts";
 @import "settings";
 
+// подключение маленьких компонентов
+@import "./components/burger";
+
 // подключения компонентов страницы
 @import "./components/header";
