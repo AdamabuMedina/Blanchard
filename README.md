@@ -1,2 +1,3 @@
 # Blanchard
-html, css, course, skillbox
+
+# Итоговый проект от школы skillbox.ru
