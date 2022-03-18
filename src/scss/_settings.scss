@@ -178,3 +178,24 @@ a {
     padding: 10px 15px;
   }
 }
+
+.title {
+  margin: 0 0 20px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 48px;
+  color: var(--color-mine-shaft);
+
+  @include mobile {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 200%;
+  color: var(--color-mine-shaft);
+}
