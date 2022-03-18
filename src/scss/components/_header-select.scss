@@ -86,12 +86,10 @@
     }
 
     &:active {
-      @include mobile {
-        outline: 2px solid #d1a9f0;
-        outline-offset: -2px;
-        background-color: rgba(194, 131, 243, 0.4);
-        background-blend-mode: multiply;
-      }
+      outline: 2px solid #d1a9f0;
+      outline-offset: -2px;
+      background-color: rgba(194, 131, 243, 0.4);
+      background-blend-mode: multiply;
     }
   }
 
@@ -103,20 +101,17 @@
     outline-color: var(--color-primary);
     outline-offset: 3px;
     color: var(--color-light);
+    transition: color .3s ease-in-out;
 
-    &:hover::after {
-      border: 2px solid var(--color-primary);
-    }
-
-    &:active::after {
-      background-color: rgba($color: #C283F3, $alpha: 0.4)
+    &:hover {
+      color: var(--color-primary);
     }
   }
 
   &--showed .header-select__dropdown {
     display: block;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     animation: show 0.5s 1;
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
