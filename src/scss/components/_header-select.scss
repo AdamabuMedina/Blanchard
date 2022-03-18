@@ -71,7 +71,6 @@
     font-size: 14px;
     line-height: 19px;
     color: var(--color-white);
-    background: url('../../img/drop-downs/drop-down1/drop-down-img1.jpg') no-repeat center;
     cursor: pointer;
 
     &:not(:last-child) {
@@ -94,6 +93,78 @@
         background-color: rgba(194, 131, 243, 0.4);
         background-blend-mode: multiply;
       }
+    }
+
+    &--1 {
+      background: url('../img/drop-downs/drop-down1/drop-down-img1.jpg') no-repeat center;
+    }
+
+    &--2 {
+      background: url('../img/drop-downs/drop-down1/drop-down-img2.jpg') no-repeat center;
+    }
+
+    &--3 {
+      background: url('../img/drop-downs/drop-down2/drop-down-img1.jpg') no-repeat center;
+    }
+
+    &--4 {
+      background: url('../img/drop-downs/drop-down2/drop-down-img2.jpg') no-repeat center;
+    }
+
+    &--5 {
+      background: url('../img/drop-downs/drop-down2/drop-down-img3.jpg') no-repeat center;
+    }
+
+    &--6 {
+      background: url('../img/drop-downs/drop-down2/drop-down-img4.jpg') no-repeat center;
+    }
+
+    &--7 {
+      background: url('../img/drop-downs/drop-down3/drop-down-img1.jpg') no-repeat center;
+    }
+
+    &--8 {
+      background: url('../img/drop-downs/drop-down3/drop-down-img2.jpg') no-repeat center;
+    }
+
+    &--9 {
+      background: url('../img/drop-downs/drop-down3/drop-down-img3.jpg') no-repeat center;
+    }
+
+    &--10 {
+      background: url('../img/drop-downs/drop-down3/drop-down-img4.jpg') no-repeat center;
+    }
+
+    &--11 {
+      background: url('../img/drop-downs/drop-down4/drop-down-img1.jpg') no-repeat center;
+    }
+
+    &--12 {
+      background: url('../img/drop-downs/drop-down4/drop-down-img2.jpg') no-repeat center;
+    }
+
+    &--13 {
+      background: url('../img/drop-downs/drop-down4/drop-down-img3.jpg') no-repeat center;
+    }
+
+    &--14 {
+      background: url('../img/drop-downs/drop-down4/drop-down-img4.jpg') no-repeat center;
+    }
+
+    &--15 {
+      background: url('../img/drop-downs/drop-down5/drop-down-img1.jpg') no-repeat center;
+    }
+
+    &--16 {
+      background: url('../img/drop-downs/drop-down5/drop-down-img2.jpg') no-repeat center;
+    }
+
+    &--17 {
+      background: url('../img/drop-downs/drop-down5/drop-down-img3.jpg') no-repeat center;
+    }
+
+    &--18 {
+      background: url('../img/drop-downs/drop-down5/drop-down-img4.jpg') no-repeat center;
     }
   }
 
