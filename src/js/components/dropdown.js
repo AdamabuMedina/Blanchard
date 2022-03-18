@@ -1,19 +1,16 @@
-import SimpleBar from "simplebar";
-
-const headerSelect = document.querySelectorAll('.header-select')
-const headerSelectList = document.querySelectorAll('.header-select__list')
-const headerSelectTitles = document.querySelectorAll('.header-select__top')
+import _vars from "../_vars";
 
 function showHeaderSelect(item, event) {
+
   item.querySelectorAll('.header-select__item').forEach(i => {
     i.setAttribute('tabindex', '0');
   });
 
-  headerSelect.forEach((i) => {
+  _vars.headerSelect.forEach((i) => {
     if (i !== event.currentTarget) {
       i.classList.remove('header-select--showed');
 
-      headerSelectTitles.forEach(title => {
+      _vars.headerSelectTitles.forEach(title => {
         title.setAttribute('aria-expanded', 'false');
       })
     }
@@ -28,13 +25,13 @@ function showHeaderSelect(item, event) {
   }
 }
 
-headerSelect.forEach((item) => {
+_vars.headerSelect.forEach((item) => {
   item.addEventListener('click', function (event) {
     showHeaderSelect(item, event);
   })
 })
 
-headerSelect.forEach((item) => {
+_vars.headerSelect.forEach((item) => {
   item.addEventListener('keydown', function (event) {
     if (event.keyCode === 13) {
       showHeaderSelect(item, event);
@@ -43,10 +40,4 @@ headerSelect.forEach((item) => {
       item.querySelector('.header-select__top').setAttribute('aria-expanded', 'false');
     }
   })
-})
-
-headerSelectList.forEach(item => {
-  let simplebar = new SimpleBar(item, {
-    autoHide: false,
-  });
 })
