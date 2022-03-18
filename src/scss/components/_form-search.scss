@@ -117,4 +117,31 @@
       width: 100%;
     }
   }
+
+  &--showed {
+    left: calc(100% - 25.5vw - 47px);
+    transition: left 0.3s;
+
+    input {
+      opacity: 0.85;
+    }
+
+    @include small-tablet {
+      left: 50px;
+    }
+
+    @include mobile {
+      position: absolute;
+      left: 0;
+      height: 120px;
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(40px);
+
+      .search__btn--mobile {
+        position: absolute;
+        left: 57px;
+        bottom: 42px;
+      }
+    }
+  }
 }

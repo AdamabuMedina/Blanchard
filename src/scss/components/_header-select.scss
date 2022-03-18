@@ -1,0 +1,117 @@
+.header-select {
+  position: relative;
+  user-select: none;
+
+  &:not(:last-child) {
+    margin-right: 101px;
+
+    @include big-desktop {
+      margin-right: 4.2vw;
+    }
+  }
+
+  &__top {
+    @include flex-all-sb;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--color-light);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    svg {
+      display: block;
+      margin-left: 2px;
+      width: 10px;
+      height: 10px;
+      fill: currentColor;
+      object-fit: cover;
+      transform: rotate(90deg);
+      transition: fill 0.3s;
+    }
+
+    &:focus {
+      @include focus;
+    }
+
+    &:hover {
+      @include hover;
+
+      @include mobile {
+        color: var(--color-light);
+      }
+    }
+
+    &:active {
+      @include active;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    left: -40px;
+    top: 46px;
+    display: none;
+    padding: 40px 20px 40px 40px;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+  }
+
+  &__list {
+    width: 240px;
+    max-height: 220px;
+  }
+
+  &__item {
+    display: block;
+    padding: 10px 15px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+    background-image: url("../img/drop-downs/drop-down1/drop-down-img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--color-light);
+
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+
+    &:hover {
+      outline: 2px solid var(--color-primary);
+      outline-offset: -2px;
+
+      @include mobile {
+        outline: none;
+      }
+    }
+
+    &:active {
+      @include mobile {
+        outline: 2px solid var(--color-biloba);
+        outline-offset: -2px;
+        background-color: rgba(194, 131, 243, 0.4);
+        background-blend-mode: multiply;
+      }
+    }
+  }
+
+  &--showed .header-select__dropdown {
+    display: block;
+    transition: 0.5s;
+    animation: show 0.5s 1;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+  }
+
+  &--showed .header-select__top {
+    svg {
+      transform: rotate(-90deg);
+    }
+  }
+
+}

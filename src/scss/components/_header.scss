@@ -72,3 +72,17 @@
     }
   }
 }
+
+.header-bottom {
+
+  &__container {
+    @include flex-all-sb;
+
+    padding-top: 24px;
+    padding-bottom: 21px;
+  }
+
+  &__select {
+    @include flex-all-sb;
+  }
+}
