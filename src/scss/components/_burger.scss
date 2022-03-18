@@ -1,16 +1,22 @@
 .burger {
   position: relative;
-  display: none;
+  border: none;
+  padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
+  color: var(--color-light);
+  background-color: transparent;
+  cursor: pointer;
 
-  &::before {
-    content: '';
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
     left: 0;
-    top: 0;
     width: 100%;
     height: var(--burger-line-height);
+    background-color: currentColor;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 
     @include mobile {
       height: 2px;
@@ -18,16 +24,12 @@
   }
 
   &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: var(--burger-line-height);
+    top: 0;
+  }
 
-    @include mobile {
-      height: 2px;
-    }
+  &::after {
+    width: 68%;
+    top: calc(100% - var(--burger-line-height));
   }
 
   &__line {
@@ -36,20 +38,41 @@
     top: 50%;
     width: 78%;
     height: var(--burger-line-height);
-    background-color: var(--color-light);
+    background-color: currentColor;
     transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
 
     @include mobile {
       height: 2px;
     }
   }
 
-  @include tablet {
+  @include big-tablet {
     display: block;
   }
 
   @include mobile {
     width: 20px;
     height: 15px;
+  }
+
+  &--active {
+    &::before {
+      top: 50%;
+      transform: rotate(45deg);
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+
+    &::after {
+      top: 50%;
+      width: 100%;
+      transform: rotate(-45deg);
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+
+    .burger__line {
+      transform: scale(0);
+      transition: transform 0.3s ease-in-out;
+    }
   }
 }

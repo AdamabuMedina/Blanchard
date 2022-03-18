@@ -1,3 +1,5 @@
+import SimpleBar from "simplebar";
+
 const headerSelect = document.querySelectorAll('.header-select')
 const headerSelectList = document.querySelectorAll('.header-select__list')
 const headerSelectTitles = document.querySelectorAll('.header-select__top')
@@ -41,4 +43,10 @@ headerSelect.forEach((item) => {
       item.querySelector('.header-select__top').setAttribute('aria-expanded', 'false');
     }
   })
+})
+
+headerSelectList.forEach(item => {
+  let simplebar = new SimpleBar(item, {
+    autoHide: false,
+  });
 })

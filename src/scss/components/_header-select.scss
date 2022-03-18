@@ -70,12 +70,9 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
+    color: var(--color-white);
+    background: url('../../img/drop-downs/drop-down1/drop-down-img1.jpg') no-repeat center;
     cursor: pointer;
-    background-image: url("../img/drop-downs/drop-down1/drop-down-img1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: var(--color-light);
 
     &:not(:last-child) {
       margin-bottom: 21px;
@@ -92,7 +89,7 @@
 
     &:active {
       @include mobile {
-        outline: 2px solid var(--color-biloba);
+        outline: 2px solid #d1a9f0;
         outline-offset: -2px;
         background-color: rgba(194, 131, 243, 0.4);
         background-blend-mode: multiply;
@@ -113,5 +110,17 @@
       transform: rotate(-90deg);
     }
   }
+}
 
+.simplebar-track.simplebar-vertical {
+  width: 2px;
+  background-color: var(--color-mine-shaft);
+}
+
+.simplebar-mask {
+  margin-right: 20px;
+}
+
+.simplebar-scrollbar {
+  background-color: var(--color-primary);
 }
