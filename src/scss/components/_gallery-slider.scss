@@ -1,0 +1,109 @@
+.gallery__slider {
+  max-width: 100%;
+  flex-basis: 1150px;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+
+  &-control {
+    @include tablet {
+      margin-bottom: 25px;
+    }
+
+    @include small-tablet {
+      margin-left: 0;
+    }
+
+    @include mobile {
+      width: 100%;
+      justify-content: center;
+      margin: 0;
+      margin-top: 20px;
+    }
+  }
+
+  &-fraction {
+    @include mobile {
+      margin: 0 12px;
+    }
+  }
+
+  @include small-tablet {
+    flex-basis: unset;
+  }
+
+  &-slide.swiper-slide._popup-link {
+    @include mobile {
+      width: 280px;
+      height: 367px;
+    }
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.gallery__slide {
+
+  &-btn {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: flex;
+      left: 25px;
+      right: 25px;
+      top: 25px;
+      bottom: 25px;
+      background-image: url("data:image/svg+xml,%3Csvg width='81' height='79' viewBox='0 0 81 79' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='25.1624' height='6.2906' transform='matrix(-0.72074 0.693205 0.72074 0.693205 18.1355 57.1965)' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M44.2696 65.7708C28.0411 65.7708 14.8853 52.6834 14.8853 36.5393C14.8853 20.3952 28.0411 7.30786 44.2696 7.30786C60.4981 7.30786 73.6539 20.3952 73.6539 36.5393C73.6539 52.6834 60.4981 65.7708 44.2696 65.7708ZM44.2696 73.0786C23.984 73.0786 7.53923 56.7194 7.53923 36.5393C7.53923 16.3592 23.984 0 44.2696 0C64.5552 0 81 16.3592 81 36.5393C81 56.7194 64.5552 73.0786 44.2696 73.0786Z' fill='white'/%3E%3Cpath d='M42 24L42 49L47.9954 49L47.9955 24L42 24Z' fill='white'/%3E%3Cpath d='M57.2336 34L32.2336 34L32.2336 39.9954L57.2336 39.9955L57.2336 34Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: opacity .3s ease-in-out;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: none;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 2px solid #D1A9F0;
+      background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+    }
+
+    &:active::before {
+      display: block;
+    }
+
+    @include small-tablet {
+
+      &::after,
+      &::before {
+        display: none;
+      }
+
+      &:active::before {
+        display: none;
+      }
+    }
+  }
+
+  @include small-tablet {
+    text-align: center;
+  }
+}

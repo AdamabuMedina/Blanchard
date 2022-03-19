@@ -1,0 +1,77 @@
+.editions {
+  &__accordion-list {
+    color: var(--color-light);
+  }
+
+  &__accordion-item {
+    width: fit-content;
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--color-heliotrope);
+    }
+
+    &:active {
+      border: none;
+    }
+
+    &:hover .editions__check {
+      color: var(--color-heliotrope);
+    }
+  }
+
+  &__categories-item {
+    position: relative;
+    padding-left: 24px;
+
+    &+& {
+      margin-top: 12px;
+    }
+  }
+
+  &__check {
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  &__check--active {
+    color: var(--color-heliotrope);
+  }
+
+  &__check-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  &__check-input+.editions__checkbox-box--active {
+    border: 1px solid var(--color-heliotrope);
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      right: 26%;
+      top: 31%;
+      height: 4px;
+      border-radius: 100%;
+      background-color: var(--color-heliotrope);
+    }
+  }
+
+  &__checkbox-box {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+    border: 1px solid var(--color-light);
+
+    &:focus {
+      outline: 3px solid var(--color-light);
+    }
+  }
+}

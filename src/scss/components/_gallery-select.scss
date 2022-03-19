@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
     border: 0;
+
+    @include small-tablet {
+      margin-bottom: 94px;
+    }
   }
 
   &__title {

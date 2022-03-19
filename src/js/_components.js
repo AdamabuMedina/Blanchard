@@ -1,3 +1,5 @@
 import "./components/search"
 import "./components/dropdown"
 import "./components/select"
+import "./components/checkbox"
+import "./components/slider"

@@ -37,6 +37,11 @@
       width: 100%;
       max-width: 300px;
     }
+
+    &-bottom {
+      position: absolute;
+      bottom: 73px;
+    }
   }
 
   &__title {
