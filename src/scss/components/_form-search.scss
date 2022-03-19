@@ -17,6 +17,10 @@
       opacity: 0.85;
     }
 
+    @include big-desktop {
+      width: 150px;
+    }
+
     @include big-tablet {
       &::placeholder {
         visibility: hidden;
@@ -91,6 +95,8 @@
       opacity: 0;
       transform: translateY(-50%);
       transition: opacity 0.3s;
+
+
 
       @include small-tablet {
         width: calc(100% - 92px);

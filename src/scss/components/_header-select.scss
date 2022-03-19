@@ -5,8 +5,12 @@
   &:not(:last-child) {
     margin-right: 101px;
 
+    @include big-desktop {
+      margin-right: 70px;
+    }
+
     @include big-tablet {
-      margin-right: 4.2vw;
+      margin-right: 50px;
     }
   }
 
