@@ -1,3 +1,4 @@
+import "../scss/main.scss";
 import './_vendor';
 import vars from './_vars';
 import './_functions';

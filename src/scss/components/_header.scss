@@ -82,6 +82,6 @@
   }
 
   &__select {
-    display: flex;
+    @include flex-all-sb;
   }
 }

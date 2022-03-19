@@ -32,6 +32,12 @@
   justify-content: space-between;
 }
 
+@mixin flex-all-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 $browser-context: 16; // Default
 
 @function rem($pixels, $context: $browser-context) {
@@ -45,8 +51,7 @@ $browser-context: 16; // Default
     /* stylelint-disable-next-line function-comma-newline-after */
     "#{$pathToImage}.avif"type("image/avif"),
     "#{$pathToImage}.webp"type("image/webp"),
-    "#{$pathToImage}.jpg"type("image/jpg")
-  );
+    "#{$pathToImage}.jpg"type("image/jpg"));
 }
 
 @mixin footerToBottom {

@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-
-@include('partials/head.html')
+<%= require('html-loader!./partials/head.html').default %>
 
 <body class="page__body">
   <div class="site-container">
-    @include('partials/header.html')
+    <header class="header">
+      <%= require('html-loader!./partials/header-top.html').default %>
+      <%= require('html-loader!./partials/header-bottom.html').default %>
+    </header>
     <main class="main">
-      <!-- Hero -->
-      @include('partials/hero.html')
+      <!--Hero-->
+      <%= require('html-loader!./partials/hero.html').default %>
       <!-- About -->
-      @include('partials/about.html')
+      <%= require('html-loader!./partials/about.html').default %>
       <!-- Gallery -->
-      @include('partials/gallery.html')
-      <!-- <picture>
-        <source srcset="img/cover.avif" type="image/avif">
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture> -->
+      <%= require('html-loader!./partials/gallery.html').default %>
     </main>
-
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример include -->
+    <%= require('html-loader!./partials/footer.html').default %>
+    <!-- <%= require('html-loader!./partials/footer.html').default %>пример include -->
   </div>
 </body>
 

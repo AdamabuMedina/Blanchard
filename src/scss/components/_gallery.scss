@@ -1,0 +1,50 @@
+.gallery {
+  background-image: url("../img/gallery-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 595px;
+  color: var(--color-light);
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+
+    @include mobile {
+      padding-top: 52px;
+      padding-bottom: 215px;
+    }
+  }
+
+  &__left {
+    max-width: 100%;
+    flex-basis: 400px;
+    margin-right: 50px;
+
+    @include tablet {
+      width: 100%;
+      flex-basis: unset;
+      max-width: 280px;
+    }
+
+    @include mobile {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 28px;
+    color: var(--color-light);
+
+    @include mobile {
+      margin-bottom: 23px;
+    }
+  }
+}

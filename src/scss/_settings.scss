@@ -199,3 +199,25 @@ a {
   line-height: 200%;
   color: var(--color-mine-shaft);
 }
+
+.descr {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-dusty-gray);
+}
+
+.link {
+  color: var(--color-primary);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 178%;
+  color: var(--color-mine-shaft);
+}

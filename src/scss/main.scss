@@ -1,13 +1,15 @@
 // базовые подключения
-@import "vars";
-@import "mixins";
-@import "fonts";
-@import "settings";
+@import "./vars";
+@import "./mixins";
+@import "./fonts";
+@import "./settings";
+@import "./vendor.scss";
 
 // подключение маленьких компонентов
 @import "./components/burger";
 @import "./components/form-search";
 @import "./components/menu";
+@import "./components/gallery-select";
 
 // подключения компонентов страницы
 @import "./components/header";
