@@ -1,13 +1,4 @@
 .about {
-  &__container {
-    padding-top: 87px;
-    padding-bottom: 69px;
-
-    @include mobile {
-      padding-top: 53px;
-      padding-bottom: 41px;
-    }
-  }
 
   &__text {
     width: 100%;

@@ -221,3 +221,13 @@ a {
   line-height: 178%;
   color: var(--color-mine-shaft);
 }
+
+.section-container {
+  padding-top: 87px;
+  padding-bottom: 69px;
+
+  @include mobile {
+    padding-top: 53px;
+    padding-bottom: 41px;
+  }
+}
