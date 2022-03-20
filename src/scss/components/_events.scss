@@ -1,0 +1,67 @@
+.events {
+
+  &__title {
+    margin-bottom: 21px
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 720px;
+    overflow: hidden;
+    transition: max-height 2s ease-in-out;
+  }
+
+  &__item {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &-title {
+      margin: 0;
+      margin-bottom: 3px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 33px;
+      color: var(--color-mine-shaft);
+    }
+
+    &-text {
+      margin: 0;
+      margin-bottom: 79px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: var(--color-mine-shaft);
+    }
+
+    &-link {
+      display: inline-block;
+      padding-bottom: 3px;
+      border-bottom: 1px solid currentColor;
+    }
+  }
+
+  &__img {
+    margin-bottom: 8px;
+  }
+
+  &__item-info {
+    padding: 0 50px;
+  }
+
+  &__sub-text {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-dusty-gray);
+  }
+}

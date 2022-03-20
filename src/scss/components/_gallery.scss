@@ -47,10 +47,6 @@
   &__title {
     margin-bottom: 28px;
     color: var(--color-light);
-
-    @include mobile {
-      margin-bottom: 23px;
-    }
   }
 
   .choices[data-type*=select-one] {

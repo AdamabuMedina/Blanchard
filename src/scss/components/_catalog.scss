@@ -1,17 +1,6 @@
 .catalog {
-  min-height: 2000px;
-
   &__title {
     margin-right: 40px;
-
-    @include small-tablet {
-      margin-bottom: 10px;
-    }
-
-    @include mobile {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
   }
 
   &__text {
