@@ -19,7 +19,7 @@ function activateSpoller(event) {
 
     if (spollerBody.classList.contains('catalog__accordion-body--active') && window.innerWidth > 440) {
       removeClass(spollerBody, 'catalog__accordion-body--active');
-      removeClass(btn, '_active');
+      removeClass(btn, 'catalog__accordion-btn--active');
       [...spoller.nextElementSibling.querySelectorAll('.catalog__accordion-nameBtn')].forEach(el => {
         el.tabIndex = -1;
       })
@@ -29,11 +29,11 @@ function activateSpoller(event) {
       });
     } else if (window.innerWidth > 440) {
       allSpollersBody.forEach(el => removeClass(el, 'catalog__accordion-body--active'));
-      btnAll.forEach(el => removeClass(el, '_active'));
+      btnAll.forEach(el => removeClass(el, 'catalog__accordion-btn--active'));
       allSpollersLists.forEach(el => addClass(el, 'animate__flipOutX'));
 
       addClass(spollerBody, 'catalog__accordion-body--active');
-      addClass(btn, '_active');
+      addClass(btn, 'catalog__accordion-btn--active');
       [...spoller.nextElementSibling.querySelectorAll('.catalog__accordion-nameBtn')].forEach(el => {
         el.tabIndex = 0;
       })
@@ -46,16 +46,16 @@ function activateSpoller(event) {
       });
     } else if (spollerBody.classList.contains('catalog__accordion-body--active') && window.innerWidth <= 440) {
       removeClass(spollerBody, 'catalog__accordion-body--active');
-      removeClass(btn, '_active');
+      removeClass(btn, 'catalog__accordion-btn--active');
       [...spoller.nextElementSibling.querySelectorAll('.catalog__accordion-nameBtn')].forEach(el => {
         el.tabIndex = -1;
       })
     } else if (window.innerWidth <= 440) {
       allSpollersBody.forEach(el => removeClass(el, 'catalog__accordion-body--active'));
-      btnAll.forEach(el => removeClass(el, '_active'));
+      btnAll.forEach(el => removeClass(el, 'catalog__accordion-btn--active'));
 
       addClass(spollerBody, 'catalog__accordion-body--active');
-      addClass(btn, '_active');
+      addClass(btn, 'catalog__accordion-btn--active');
 
       [...spoller.nextElementSibling.querySelectorAll('.catalog__accordion-nameBtn')].forEach(el => {
         el.tabIndex = 0;
