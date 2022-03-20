@@ -46,7 +46,6 @@ const sliderGallery = new Swiper(".gallery__slider", {
     1330: {
       spaceBetween: 50,
       slidesPerColumnFill: 'row',
-      // slidesPerGroup: 3,
       updateOnWindowResize: true,
       slidesPerView: 3,
       slidesPerColumn: 1,

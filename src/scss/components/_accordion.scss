@@ -106,11 +106,6 @@
       }
     }
 
-    @include big-desktop {
-      display: flex;
-      justify-content: center;
-    }
-
     @include mobile {
       justify-content: left;
     }
@@ -121,6 +116,10 @@
     padding-bottom: 25px;
     column-count: 3;
     column-gap: 54px;
+
+    @include full-desktop {
+      column-gap: 30px;
+    }
 
     @include big-desktop {
       column-count: 2;
@@ -187,6 +186,14 @@
     @include tablet {
       font-size: 15px;
     }
+  }
+
+  @include full-desktop {
+    margin-left: 20px;
+  }
+
+  @include tablet {
+    max-width: 437px;
   }
 
   @include small-tablet {
