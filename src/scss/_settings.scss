@@ -230,6 +230,10 @@ a {
     padding-top: 18px;
   }
 
+  &--project {
+    padding-top: 85px;
+  }
+
   @include mobile {
     padding-top: 53px;
     padding-bottom: 41px;
