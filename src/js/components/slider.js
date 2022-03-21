@@ -62,6 +62,8 @@ const sliderEvents = new Swiper(eventsSliders, {
     prevEl: '.events__prev',
   },
   spaceBetween: 50,
+  slidesPerColumnFill: 'row',
+  updateOnWindowResize: true,
   slidesPerColumn: 1,
   // breakpoints: {
   //   500: {
