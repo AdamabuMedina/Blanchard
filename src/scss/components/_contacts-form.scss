@@ -1,0 +1,45 @@
+.contacts-form {
+  margin-right: 80px;
+
+  &__input {
+    width: 270px;
+    border-radius: 100px;
+    border: 1px solid var(--color-mine-shaft);
+    margin-right: 17px;
+    padding: 16px 20px;
+    cursor: pointer;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: var(--color-dusty-gray);
+    }
+
+    &:hover {
+      background-color: var(--color-gallery);
+    }
+  }
+
+  &__btn {
+    width: 325px;
+    padding: 11px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 100px;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-light);
+    }
+
+    &:active {
+      border: 2px solid var(--color-light);
+    }
+  }
+}
