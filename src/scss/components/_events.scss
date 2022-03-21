@@ -86,7 +86,7 @@
   position: relative;
   overflow: hidden;
 
-  &__btn {
+  &-btn {
     @include flex-all-center;
 
     border: none;
