@@ -7,7 +7,7 @@
   &__next {
     position: absolute;
     right: 28px;
-    top: 59.1%;
+    top: 56%;
     z-index: 10;
     transform: translateY(-50%);
   }
@@ -15,7 +15,7 @@
   &__prev {
     position: absolute;
     left: 32px;
-    top: 56%;
+    top: 54%;
     z-index: 10;
     transform: translateY(-50%);
     transform: rotate(180deg);
@@ -36,7 +36,7 @@
 
     &-title {
       margin: 0;
-      margin-bottom: 3px;
+      margin-top: 12px;
       font-weight: 600;
       font-size: 24px;
       line-height: 33px;
@@ -45,7 +45,7 @@
 
     &-text {
       margin: 0;
-      margin-bottom: 79px;
+      margin-top: 3px;
       font-weight: 400;
       font-size: 16px;
       line-height: 32px;
@@ -53,17 +53,18 @@
     }
 
     &-link {
+      position: absolute;
       display: inline-block;
+      left: 47px;
+      bottom: 42px;
       padding-bottom: 3px;
       border-bottom: 1px solid currentColor;
     }
   }
 
-  &__img {
-    margin-bottom: 8px;
-  }
-
   &__item-info {
+    position: relative;
+    height: 396px;
     border-bottom: 1px solid var(--color-gallery);
     border-left: 1px solid var(--color-gallery);
     border-right: 1px solid var(--color-gallery);
@@ -71,9 +72,9 @@
   }
 
   &__sub-text {
+    margin-top: 11px;
     display: inline-block;
     padding: 0;
-    margin-bottom: 15px;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
