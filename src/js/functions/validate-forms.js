@@ -1,5 +1,5 @@
-import JustValidate from 'just-validate';
-import Inputmask from "inputmask";
+import JustValidate from '../vendor/just-validate.min';
+import Inputmask from "../vendor/inputmask.min";
 
 export const validateForms = (selector, rules, afterSend) => {
   const form = document?.querySelector(selector);
@@ -23,7 +23,7 @@ export const validateForms = (selector, rules, afterSend) => {
       if (item.tel) {
         item.rules.push({
           rule: 'function',
-          validator: function() {
+          validator: function () {
             const phone = telSelector.inputmask.unmaskedvalue();
             return phone.length === 10;
           },

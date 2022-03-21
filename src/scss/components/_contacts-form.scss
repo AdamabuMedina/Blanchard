@@ -1,14 +1,36 @@
 .contacts-form {
   margin-top: 1px;
   margin-right: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  &__label {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .just-validate-error-label {
+    padding-left: 20px;
+    padding-bottom: 2px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #D11616 !important;
+  }
+
+
 
   &__input {
     width: 270px;
+    max-height: 50px;
     border-radius: 100px;
     border: 1px solid var(--color-mine-shaft);
     margin-right: 17px;
     padding: 16px 20px;
+    outline: none;
     cursor: pointer;
+    transition: background-color .3s ease-in-out;
 
     &::placeholder {
       font-weight: 400;
@@ -22,8 +44,13 @@
     }
   }
 
+  .just-validate-error-field {
+    border: 1px solid #D11616 !important;
+  }
+
   &__btn {
     width: 325px;
+    max-height: 50px;
     padding: 11px 20px;
     font-weight: 700;
     font-size: 18px;
