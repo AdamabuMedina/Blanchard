@@ -22,7 +22,7 @@
     line-height: 25px;
     cursor: pointer;
     color: var(--color-light);
-    transition: color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     svg {
       display: block;
@@ -32,15 +32,11 @@
       fill: currentColor;
       object-fit: cover;
       transform: rotate(90deg);
-      transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
-    }
-
-    &:focus {
-      outline: 2px solid var(--color-biloba);
+      transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
     }
 
     &:hover {
-      color: var(--color-heliotrope);
+      color: var(--color-primary);
 
       @include mobile {
         color: var(--color-light);
@@ -48,7 +44,7 @@
     }
 
     &:active {
-      color: var(--color-biloba);
+      color: var(--color-purple);
     }
   }
 
@@ -79,22 +75,6 @@
     &:not(:last-child) {
       margin-bottom: 21px;
     }
-
-    &:hover {
-      outline: 2px solid var(--color-primary);
-      outline-offset: -2px;
-
-      @include mobile {
-        outline: none;
-      }
-    }
-
-    &:active {
-      outline: 2px solid #d1a9f0;
-      outline-offset: -2px;
-      background-color: rgba(194, 131, 243, 0.4);
-      background-blend-mode: multiply;
-    }
   }
 
   &__link {
@@ -102,13 +82,15 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
-    outline-color: var(--color-primary);
-    outline-offset: 3px;
     color: var(--color-light);
     transition: color .3s ease-in-out;
 
     &:hover {
       color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-purple);
     }
   }
 

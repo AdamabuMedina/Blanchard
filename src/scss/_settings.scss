@@ -31,17 +31,20 @@ img {
 a {
   text-decoration: none;
 
-  &:focus {
-    outline: 2px solid var(--color-biloba);
-  }
+  // &:focus {
+  //   outline: 2px solid var(--color-biloba);
+  //   text-decoration: none;
+  // }
 
-  &:hover {
-    color: var(--color-heliotrope);
-  }
+  // &:hover {
+  //   color: var(--color-heliotrope);
+  //   text-decoration: none;
+  // }
 
-  &:active {
-    color: var(--color-biloba);
-  }
+  // &:active {
+  //   color: var(--color-biloba);
+  //   text-decoration: none;
+  // }
 }
 
 .site-container {

@@ -39,11 +39,7 @@
     font-size: 18px;
     line-height: 25px;
     color: var(--color-light);
-    transition: color 0.3s ease-in-out;
-
-    &:focus {
-      outline: 2px solid var(--color-biloba);
-    }
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       color: var(--color-heliotrope);
@@ -54,7 +50,13 @@
     }
 
     &:active {
-      color: var(--color-biloba);
+      color: var(--color-purple);
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-biloba);
+      background-color: var(--color-purple);
+      color: var(--color-light);
     }
 
     @include big-tablet {
@@ -67,6 +69,8 @@
   }
 
   &__btn {
+    margin-right: 2px;
+    margin-bottom: 4px;
     padding-right: 0;
     font-weight: 400;
     font-size: 18px;
@@ -79,9 +83,6 @@
       fill: currentColor;
     }
 
-    &:focus {
-      outline: 2px solid var(--color-biloba);
-    }
 
     &:hover {
       color: var(--color-heliotrope);
@@ -92,7 +93,11 @@
     }
 
     &:active {
-      color: var(--color-biloba);
+      color: var(--color-primary);
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-biloba);
     }
 
     @include big-tablet {
