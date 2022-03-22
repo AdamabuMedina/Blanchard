@@ -32,15 +32,15 @@ a {
   text-decoration: none;
 
   &:focus {
-    @include focus;
+    outline: 2px solid var(--color-biloba);
   }
 
   &:hover {
-    @include hover;
+    color: var(--color-heliotrope);
   }
 
   &:active {
-    @include active;
+    color: var(--color-biloba);
   }
 }
 
@@ -160,18 +160,6 @@ a {
 
   span {
     transition: color 0.3s;
-  }
-
-  &:focus {
-    @include focusBtn;
-  }
-
-  &:hover {
-    @include hoverBtn;
-  }
-
-  &:active {
-    @include activeBtn;
   }
 
   @include mobile {

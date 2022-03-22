@@ -36,11 +36,11 @@
     }
 
     &:focus {
-      @include focus;
+      outline: 2px solid var(--color-biloba);
     }
 
     &:hover {
-      @include hover;
+      color: var(--color-heliotrope);
 
       @include mobile {
         color: var(--color-light);
@@ -48,7 +48,7 @@
     }
 
     &:active {
-      @include active;
+      color: var(--color-biloba);
     }
   }
 

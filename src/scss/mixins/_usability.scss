@@ -36,7 +36,8 @@
 
 @mixin hoverBtn {
   background-color: var(--color-primary);
-span {
+
+  span {
     color: var(--color-light);
   }
 }

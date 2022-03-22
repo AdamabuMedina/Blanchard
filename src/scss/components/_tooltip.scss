@@ -15,8 +15,8 @@
       }
     }
 
-    @include hover-1 {
-      +.tooltip__txt {
+    &:hover {
+      .tooltip__txt {
         opacity: 1;
         visibility: visible;
       }
