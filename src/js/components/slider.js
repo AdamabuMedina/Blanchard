@@ -56,26 +56,28 @@ const sliderGallery = new Swiper(".gallery__slider", {
 const eventsSliders = document.querySelector(".events__slider")
 
 const sliderEvents = new Swiper(eventsSliders, {
-  loop: false,
   pagination: {
     el: ".swiper-pagination-events",
     type: "bullets",
     clickable: true,
   },
+  slidesPerColumnFill: 'row',
+  updateOnWindowResize: true,
+  slidesPerColumn: 1,
   breakpoints: {
     320: {
       spaceBetween: 20,
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
-    577: {
-      spaceBetween: 34,
+    769: {
+      spaceBetween: 50,
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
-    769: {
+    993: {
       spaceBetween: 27,
-      slidesPerView: 3,
+      slidesPerView: 2,
       slidesPerGroup: 3,
     },
     1025: {
@@ -113,7 +115,7 @@ const sliderPartners = new Swiper(partnersSliders, {
     720: {
       slidesPerView: 2,
       slidesPerColumn: 1,
-      // spaceBetween: 34,
+      spaceBetween: 34,
     },
     1024: {
       slidesPerView: 2,

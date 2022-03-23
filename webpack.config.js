@@ -164,7 +164,11 @@ module.exports = {
       {
         test: /\.(png|svg|jpe?g|gif|mp4)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'image/[hash][ext]'
+        },
       },
+
       {
         test: /\.(woff(2)?|eot|ttf|otf|)$/i,
         type: 'asset/resource'
