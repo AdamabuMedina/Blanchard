@@ -23,16 +23,24 @@
 
   &__inner {
     display: flex;
+
+    @include tablet {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    max-height: 300px;
+
+    @include tablet {
+      height: 200px;
+    }
   }
 
   &__item {
-    width: 500px;
     max-width: 100%;
-    height: auto;
-
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
+    width: 500px;
 
     &-title {
       margin: 0;
@@ -41,6 +49,10 @@
       font-size: 24px;
       line-height: 33px;
       color: var(--color-mine-shaft);
+
+      @include tablet {
+        margin-top: 3px;
+      }
     }
 
     &-text {
@@ -50,6 +62,10 @@
       font-size: 16px;
       line-height: 32px;
       color: var(--color-mine-shaft);
+
+      @include tablet {
+        margin-top: 8px
+      }
     }
 
     &-link {
@@ -72,6 +88,15 @@
       &:focus {
         color: var(--color-mine-shaft);
       }
+
+      @include tablet {
+        left: 33px;
+        bottom: 48px;
+      }
+    }
+
+    @include tablet {
+      width: 290px !important;
     }
 
   }
@@ -88,6 +113,13 @@
       padding: 0 34px;
       height: 483px;
     }
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      padding: 0 24px;
+      height: 479px;
+    }
   }
 
   &__sub-text {
@@ -98,6 +130,10 @@
     font-size: 12px;
     line-height: 16px;
     color: var(--color-dusty-gray);
+
+    @include tablet {
+      text-align: end;
+    }
   }
 }
 
@@ -141,5 +177,39 @@
       border: 2px solid var(--color-primary);
       background-color: var(--color-biloba);
     }
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.swiper-pagination-events {
+  position: relative;
+  display: none;
+  bottom: 0;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-silver);
+
+  &-active {
+    background-color: var(--color-dove-gray);
   }
 }

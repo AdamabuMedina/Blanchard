@@ -1,128 +1,262 @@
 <section class="gallery" id="gallery">
-  <div class="container gallery__container section-container">
-    <div class="gallery__left gallery-left">
-      <h2 class="title gallery__title">Галерея</h2>
-      <div class="gallery-select__wrapper">
-        <div class="gallery-select__title">Фильтр:</div>
-        <select class="gallery-select" id="gallery-select" name="select">
-          <option value="Автор">Автор</option>
-          <option value="Направление">Направление</option>
-          <option value="Техника">Техника</option>
-        </select>
+  <div class="container section-container--gallery">
+    <div class="gallery__container">
+      <div class="gallery__left gallery-left">
+        <h2 class="title gallery__title">Галерея</h2>
+        <div class="gallery-select__wrapper">
+          <div class="gallery-select__title">Фильтр:</div>
+          <select class="gallery-select" id="gallery-select" name="select">
+            <option value="Автор">Автор</option>
+            <option value="Направление">Направление</option>
+            <option value="Техника">Техника</option>
+          </select>
+        </div>
+        <div class="gallery__left-bottom">
+          <ul class="editions__categories editions__accordion-list list-reset">
+            <li
+              class="editions__accordion-item editions__categories-item"
+              tabindex="0"
+            >
+              <label class="editions__check">
+                <input
+                  class="editions__check-input"
+                  type="checkbox"
+                  name="a"
+                  tabindex="-1"
+                />
+                <span class="editions__checkbox-box"></span>
+                <span>XIX век</span>
+              </label>
+            </li>
+            <li
+              class="editions__accordion-item editions__categories-item"
+              tabindex="0"
+            >
+              <label class="editions__check">
+                <input
+                  class="editions__check-input"
+                  type="checkbox"
+                  name="a"
+                  tabindex="-1"
+                />
+                <span class="editions__checkbox-box"></span>
+                <span>XX век</span>
+              </label>
+            </li>
+            <li
+              class="editions__accordion-item editions__categories-item"
+              tabindex="0"
+            >
+              <label class="editions__check">
+                <input
+                  class="editions__check-input"
+                  type="checkbox"
+                  name="a"
+                  tabindex="-1"
+                />
+                <span class="editions__checkbox-box"></span>
+                <span>Современность</span>
+              </label>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="gallery__left-bottom">
-        <ul class="editions__categories editions__accordion-list list-reset">
-          <li class="editions__accordion-item editions__categories-item" tabindex="0">
-            <label class="editions__check">
-              <input class="editions__check-input" type="checkbox" name="a" tabindex="-1">
-              <span class="editions__checkbox-box"></span>
-              <span>XIX век</span>
-            </label>
-          </li>
-          <li class="editions__accordion-item editions__categories-item" tabindex="0">
-            <label class="editions__check">
-              <input class="editions__check-input" type="checkbox" name="a" tabindex="-1">
-              <span class="editions__checkbox-box"></span>
-              <span>XX век</span>
-            </label>
-          </li>
-          <li class="editions__accordion-item editions__categories-item" tabindex="0">
-            <label class="editions__check">
-              <input class="editions__check-input" type="checkbox" name="a" tabindex="-1">
-              <span class="editions__checkbox-box"></span>
-              <span>Современность</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="gallery__slider swiper-container">
-      <div class="slider-control">
-        <div class="slider-control__arrow slider-control__arrow--prev">
-          <svg class="swiper-gallery__btn-prev-svg" fill="none" height="30" viewBox="0 0 30 30" width="30"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 20L11 15L16 10" stroke="white" />
-          </svg>
+      <div class="gallery__slider swiper-container">
+        <div class="slider-control">
+          <div class="slider-control__arrow slider-control__arrow--prev">
+            <svg
+              class="swiper-gallery__btn-prev-svg"
+              fill="none"
+              height="30"
+              viewBox="0 0 30 30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M16 20L11 15L16 10" stroke="white" />
+            </svg>
+          </div>
+          <div class="slider-control__fraction"></div>
+          <div class="slider-control__arrow slider-control__arrow--next">
+            <svg
+              fill="none"
+              height="30"
+              viewBox="0 0 30 30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M14 20L19 15L14 10" stroke="white" />
+            </svg>
+          </div>
         </div>
-        <div class="slider-control__fraction"></div>
-        <div class="slider-control__arrow slider-control__arrow--next">
-          <svg fill="none" height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 20L19 15L14 10" stroke="white" />
-          </svg>
-        </div>
-      </div>
-      <div class="gallery__slider-slides swiper-wrapper">
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/1.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/2.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/3.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/4.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/5.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/6.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/1.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/2.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/3.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/4.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/5.jpg" alt="Красивая картина, произведение искусства">
-          </button>
-        </div>
-        <div class="gallery__slide gallery__slider-slide swiper-slide">
-          <button type="button" aria-label="нажмите, чтобы узнать про картину" data-popupName='gallery-1-1'
-            class="btn-reset gallery__slide-btn _popup-link">
-            <img class="gallery__img" src="../img/gallery/6.jpg" alt="Красивая картина, произведение искусства">
-          </button>
+        <div class="gallery__slider-slides swiper-wrapper">
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/1.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/2.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/3.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/4.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/5.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/6.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/1.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/2.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/3.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/4.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/5.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
+          <div class="gallery__slide gallery__slider-slide swiper-slide">
+            <button
+              type="button"
+              aria-label="нажмите, чтобы узнать про картину"
+              data-popupName="gallery-1-1"
+              class="btn-reset gallery__slide-btn _popup-link"
+            >
+              <img
+                class="gallery__img"
+                src="../img/gallery/6.jpg"
+                alt="Красивая картина, произведение искусства"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>

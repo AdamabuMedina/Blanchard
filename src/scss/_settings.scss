@@ -210,11 +210,51 @@ a {
 
   &--events {
     padding-top: 18px;
+
+    @include tablet {
+      padding-top: 19px;
+    }
   }
 
   &--project {
     padding-top: 85px;
     padding-bottom: 80px;
+
+    @include tablet {
+      padding-bottom: 77px;
+    }
+  }
+
+  &--about {
+    @include tablet {
+      padding-top: 85px;
+      padding-bottom: 70px;
+    }
+  }
+
+  &--gallery {
+    padding-top: 85px;
+    padding-bottom: 79px;
+
+    @include tablet {
+      padding-bottom: 77px;
+    }
+  }
+
+  &--catalog {
+    @include tablet {
+      padding-top: 85px;
+    }
+  }
+
+  &--contacts {
+    padding-top: 33px;
+    padding-bottom: 0;
+
+    @include tablet {
+      padding-top: 9px;
+      padding-bottom: 4px;
+    }
   }
 
 

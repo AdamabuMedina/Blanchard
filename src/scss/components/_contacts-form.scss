@@ -42,6 +42,18 @@
     &:hover {
       background-color: var(--color-gallery);
     }
+
+    &--name {
+      @include tablet {
+        margin-right: 20px;
+      }
+    }
+
+    &--tel {
+      @include tablet {
+        margin-right: 20px;
+      }
+    }
   }
 
   .just-validate-error-field {
@@ -68,6 +80,10 @@
 
     &:focus {
       border: 2px solid var(--color-light);
+    }
+
+    @include tablet {
+      width: 343px;
     }
   }
 

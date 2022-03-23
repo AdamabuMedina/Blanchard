@@ -115,9 +115,9 @@
     }
 
     @include tablet {
-      column-gap: 10px;
+      column-gap: 72px;
       white-space: nowrap;
-      padding-bottom: 50px;
+      // padding-bottom: 50px;
     }
 
     @include small-tablet {

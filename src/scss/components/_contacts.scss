@@ -63,6 +63,11 @@
     align-items: center;
     margin-top: 6px;
     margin-left: 2px;
+
+    @include tablet {
+      margin-top: 5px;
+      margin-left: -1px;
+    }
   }
 
   &__item {

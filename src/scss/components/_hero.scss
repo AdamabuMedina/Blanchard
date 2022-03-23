@@ -7,7 +7,7 @@
     padding-bottom: 121px;
 
     @include big-tablet {
-      padding-top: 208px;
+      padding-top: 207px;
       padding-bottom: 113px;
     }
 
@@ -30,7 +30,8 @@
     color: var(--color-light);
 
     @include big-tablet {
-      margin-bottom: 9px;
+      margin: 0;
+      margin-bottom: 8px;
     }
 
     @include small-tablet {
@@ -56,7 +57,7 @@
     color: var(--color-light);
 
     @include big-tablet {
-      margin-bottom: 132px;
+      margin-bottom: 134px;
       max-width: 670px;
     }
 

@@ -8,4 +8,10 @@
       font-size: 14px;
     }
   }
+
+  &__title {
+    @include tablet {
+      margin-bottom: 21px;
+    }
+  }
 }

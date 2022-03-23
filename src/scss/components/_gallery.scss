@@ -3,23 +3,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 595px;
   color: var(--color-light);
 
   &__container {
     position: relative;
     display: flex;
     justify-content: space-between;
-
-    @include tablet {
-      flex-direction: column;
-      padding-bottom: 0;
-    }
-
-    @include mobile {
-      padding-top: 52px;
-      padding-bottom: 215px;
-    }
   }
 
   &__left {
@@ -40,7 +29,17 @@
 
     &-bottom {
       position: absolute;
-      bottom: 80px;
+      bottom: 10px;
+
+      @include tablet {
+        bottom: 48px;
+      }
+    }
+  }
+
+  &__img {
+    @include tablet {
+      height: 315px;
     }
   }
 
