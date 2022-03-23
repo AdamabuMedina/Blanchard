@@ -1,145 +1,5 @@
-.events {
-
-  &__title {
-    margin-bottom: 21px
-  }
-
-  &__next {
-    position: absolute;
-    right: 28px;
-    top: 56%;
-    z-index: 10;
-    transform: translateY(-50%);
-  }
-
-  &__prev {
-    position: absolute;
-    left: 32px;
-    top: 54%;
-    z-index: 10;
-    transform: translateY(-50%);
-    transform: rotate(180deg);
-  }
-
-  &__inner {
-    display: flex;
-
-    @include tablet {
-      margin-bottom: 23px;
-    }
-  }
-
-  &__img {
-    height: 100%;
-    max-height: 300px;
-
-    @include tablet {
-      height: 200px;
-    }
-  }
-
-  &__item {
-    max-width: 100%;
-    width: 500px;
-
-    &-title {
-      margin: 0;
-      margin-top: 12px;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 33px;
-      color: var(--color-mine-shaft);
-
-      @include tablet {
-        margin-top: 3px;
-      }
-    }
-
-    &-text {
-      margin: 0;
-      margin-top: 3px;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 32px;
-      color: var(--color-mine-shaft);
-
-      @include tablet {
-        margin-top: 8px
-      }
-    }
-
-    &-link {
-      position: absolute;
-      display: inline-block;
-      left: 51px;
-      bottom: 39px;
-      padding-bottom: 0;
-      border-bottom: 1px solid currentColor;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 32px;
-      color: var(--color-primary);
-      transition: color .3s ease-in-out;
-
-      &:hover {
-        color: var(--color-purple);
-      }
-
-      &:focus {
-        color: var(--color-mine-shaft);
-      }
-
-      @include tablet {
-        left: 33px;
-        bottom: 48px;
-      }
-    }
-
-    @include tablet {
-      width: 290px !important;
-    }
-
-  }
-
-  &__item-info {
-    position: relative;
-    height: 396px;
-    border-bottom: 1px solid var(--color-gallery);
-    border-left: 1px solid var(--color-gallery);
-    border-right: 1px solid var(--color-gallery);
-    padding: 0 50px;
-
-    @include big-tablet {
-      padding: 0 34px;
-      height: 483px;
-    }
-
-    @include tablet {
-      display: flex;
-      flex-direction: column;
-      padding: 0 24px;
-      height: 479px;
-    }
-  }
-
-  &__sub-text {
-    margin-top: 11px;
-    display: inline-block;
-    padding: 0;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    color: var(--color-dusty-gray);
-
-    @include tablet {
-      text-align: end;
-    }
-  }
-}
-
 .events__slider {
-  position: relative;
-  overflow: hidden;
+  position: initial;
 
   .swiper-button-disabled {
     display: none;
@@ -183,6 +43,182 @@
     }
   }
 }
+
+.events {
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 20px
+  }
+
+  &__next {
+    position: absolute;
+    right: 28px;
+    top: 56%;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+
+  &__prev {
+    position: absolute;
+    left: 32px;
+    top: 54%;
+    z-index: 10;
+    transform: translateY(-50%);
+    transform: rotate(180deg);
+  }
+
+  &__list {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    // @include tablet {
+    //   margin-bottom: 23px;
+    // }
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid var(--color-gallery);
+    box-sizing: border-box;
+  }
+
+  &__figure {
+    margin: 0 0 13px;
+  }
+
+  &__image {
+    display: block;
+    object-fit: contain;
+  }
+
+  &__items {
+    max-width: 500px;
+    width: auto;
+    height: auto;
+
+    @include tablet {
+      max-width: 290px !important;
+    }
+
+    // @include large {
+    //   width: 317px !important;
+    // }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 39px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+    flex-basis: 100%;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 66px;
+      width: 100%;
+    }
+
+    &-title {
+      margin: 0;
+      margin-top: 9px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 33px;
+      color: var(--color-mine-shaft);
+
+      @include tablet {
+        margin-top: 3px;
+      }
+    }
+
+    &-text {
+      margin: 0;
+      margin-top: 3px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: var(--color-mine-shaft);
+
+      @include tablet {
+        margin-top: 8px
+      }
+    }
+
+    &-link {
+      display: inline-block;
+      border-bottom: 1px solid currentColor;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: var(--color-primary);
+      transition: color .3s ease-in-out;
+
+      &:hover {
+        color: var(--color-purple);
+      }
+
+      &:focus {
+        color: var(--color-mine-shaft);
+      }
+
+      @include tablet {
+        left: 33px;
+        bottom: 48px;
+      }
+    }
+
+    @include big-tablet {
+      padding: 0 34px;
+      height: 483px;
+    }
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      padding: 0 24px;
+      height: 479px;
+    }
+  }
+
+  &__sub {
+    &-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 1px;
+      padding-left: 50px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: left;
+      color: var(--color-dusty-gray);
+
+      @include tablet {
+        text-align: end;
+      }
+    }
+
+    &-date {
+      display: block;
+      margin: 0;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
 
 .swiper-pagination-events {
   position: relative;
