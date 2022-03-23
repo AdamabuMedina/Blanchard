@@ -6,15 +6,6 @@
   &__accordion-item {
     width: fit-content;
 
-    &:focus {
-      outline: none;
-      border: 1px solid var(--color-heliotrope);
-    }
-
-    &:active {
-      border: none;
-    }
-
     &:hover .editions__check {
       color: var(--color-heliotrope);
     }

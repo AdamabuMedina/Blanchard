@@ -18,6 +18,13 @@
 
     &:hover {
       color: var(--color-primary);
+      text-decoration: underline;
+      transition: color .3s ease-in-out, text-decoration .3s ease-in-out;
+    }
+
+    &:focus {
+      color: var(--color-purple);
+      text-decoration: underline;
       transition: color .3s ease-in-out;
     }
   }

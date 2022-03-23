@@ -4,6 +4,10 @@
   &-container {
     position: relative;
     padding: 0 75px;
+
+    @include full-desktop {
+      padding: 0 50px;
+    }
   }
 
   &-wrapper {
@@ -79,7 +83,8 @@
   &-img-wrapper {
     @include flex-all-center;
 
-    width: 448px;
+    width: 100%;
+    max-width: 448px;
     height: 148px;
     background: var(--color-light);
     border: 1px solid var(--color-silver);
@@ -92,6 +97,11 @@
 
     &:active {
       border: 1px solid var(--color-primary);
+    }
+
+    @include big-tablet {
+      max-width: 384px;
+      height: 128px;
     }
   }
 

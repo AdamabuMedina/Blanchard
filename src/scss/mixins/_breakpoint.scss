@@ -7,7 +7,7 @@
 }
 
 @mixin full-desktop {
-  @media (max-width: (1660px)) {
+  @media (max-width: (1705px)) {
     @content;
   }
 }

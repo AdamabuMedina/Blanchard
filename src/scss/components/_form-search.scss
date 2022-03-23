@@ -5,7 +5,7 @@
   transition: color 0.3s ease-in-out;
 
   &__input {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid var(--color-light85);
     padding-bottom: 4px;
     width: 219px;
     font-weight: 400;
@@ -13,8 +13,14 @@
     color: currentColor;
 
     &::placeholder {
-      color: var(--color-light);
-      opacity: 0.85;
+      color: var(--color-light85);
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
     }
 
     @include big-desktop {

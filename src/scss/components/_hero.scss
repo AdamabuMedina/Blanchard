@@ -81,13 +81,7 @@
     letter-spacing: 0.4px;
     color: var(--color-light);
     background-color: var(--color-primary);
-    transition: border-color 0.3s, color 0.3s;
-
-    &:focus {
-      outline: none;
-      border-color: var(--color-purple);
-      color: var(--color-light);
-    }
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
     &:hover {
       border-color: var(--color-biloba);
@@ -101,9 +95,7 @@
     }
 
     &:active {
-      @include mobile {
-        background-color: var(--color-biloba);
-      }
+      background-color: var(--color-purple);
     }
 
     @include mobile {

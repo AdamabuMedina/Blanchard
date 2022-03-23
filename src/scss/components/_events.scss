@@ -55,11 +55,25 @@
     &-link {
       position: absolute;
       display: inline-block;
-      left: 47px;
-      bottom: 42px;
-      padding-bottom: 3px;
+      left: 51px;
+      bottom: 39px;
+      padding-bottom: 0;
       border-bottom: 1px solid currentColor;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: var(--color-primary);
+      transition: color .3s ease-in-out;
+
+      &:hover {
+        color: var(--color-purple);
+      }
+
+      &:focus {
+        color: var(--color-mine-shaft);
+      }
     }
+
   }
 
   &__item-info {
@@ -69,6 +83,11 @@
     border-left: 1px solid var(--color-gallery);
     border-right: 1px solid var(--color-gallery);
     padding: 0 50px;
+
+    @include big-tablet {
+      padding: 0 34px;
+      height: 483px;
+    }
   }
 
   &__sub-text {
@@ -85,6 +104,10 @@
 .events__slider {
   position: relative;
   overflow: hidden;
+
+  .swiper-button-disabled {
+    display: none;
+  }
 
   &-btn {
     @include flex-all-center;
@@ -110,12 +133,6 @@
       top: 16px;
     }
 
-    &:focus {
-      outline: 2px solid var(--color-primary);
-      outline-offset: 1px;
-      background-color: var(--color-gallery);
-    }
-
     &:hover {
       background-color: var(--color-biloba);
     }
@@ -125,8 +142,4 @@
       background-color: var(--color-biloba);
     }
   }
-}
-
-.swiper-button-disabled {
-  display: none;
 }

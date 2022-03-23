@@ -66,8 +66,18 @@
       color: var(--color-light);
     }
 
-    &:active {
+    &:focus {
       border: 2px solid var(--color-light);
     }
   }
+
+  @include full-desktop {
+    margin-right: 40px;
+  }
+
+  @include big-desktop {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
 }

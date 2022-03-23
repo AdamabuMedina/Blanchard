@@ -31,20 +31,11 @@ img {
 a {
   text-decoration: none;
 
-  // &:focus {
-  //   outline: 2px solid var(--color-biloba);
-  //   text-decoration: none;
-  // }
-
-  // &:hover {
-  //   color: var(--color-heliotrope);
-  //   text-decoration: none;
-  // }
-
-  // &:active {
-  //   color: var(--color-biloba);
-  //   text-decoration: none;
-  // }
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .site-container {
@@ -230,86 +221,5 @@ a {
   @include mobile {
     padding-top: 53px;
     padding-bottom: 41px;
-  }
-}
-
-.slider-control {
-  @include flex-all-sb;
-
-  width: 130px;
-  margin-left: 0;
-  margin-top: 15px;
-  margin-bottom: 29px;
-
-  &__arrow {
-    flex-basis: 11px;
-    height: 12px;
-    padding: 15px;
-    border-radius: 100px;
-    background-color: var(--color-dove-gray);
-    outline: none;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-
-    &:focus {
-      outline: none;
-      border: 2px solid var(--color-purple);
-    }
-
-    &:hover {
-      background-color: var(--color-primary);
-      transition: background-color 0.3s ease-in-out;
-    }
-
-    &:active {
-      border-color: var(--color-biloba);
-      background-color: var(--color-purple);
-      transition: background-color 0.3s ease-in-out;
-    }
-
-    &--prev {
-      background-image: url("data:image/svg+xml,%3Csvg width='11' height='12' viewBox='0 0 11 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 11L10 6L5 0.999998' stroke='white'/%3E%3C/svg%3E%0A");
-      transform: rotate(-180deg);
-    }
-
-    &--next {
-      background-image: url("data:image/svg+xml,%3Csvg width='11' height='12' viewBox='0 0 11 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 11L10 6L5 0.999998' stroke='white'/%3E%3C/svg%3E%0A");
-    }
-
-    @include mobile {}
-  }
-
-  &__fraction {
-    width: auto;
-
-    .swiper-pagination-current,
-    .swiper-pagination-total {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 32px;
-      color: var(--color-light);
-    }
-
-
-
-    @include mobile {
-      margin: 0 12px;
-    }
-  }
-
-  @include tablet {
-    margin-bottom: 30px;
-  }
-
-  @include small-tablet {
-    margin-left: 0;
-  }
-
-  @include mobile {
-    width: 100%;
-    margin: 0;
-    margin-top: 20px;
-    justify-content: center;
   }
 }

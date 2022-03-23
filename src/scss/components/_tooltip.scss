@@ -1,11 +1,42 @@
 .tooltip {
-  &__btn {
+  position: relative;
+  display: inline-flex;
+  height: 16px;
+  width: 16px;
+  color: var(--color-light);
 
+  &--1 {
+    transform: translateY(2px) translateX(1px);
+  }
+
+  &--2 {
+    transform: translateY(2px) translateX(-2px);
+  }
+
+  &--3 {
+    transform: translateY(2px) translateX(1px);
+  }
+
+
+
+  &__btn {
+    border-radius: 100px;
     cursor: help;
 
     svg {
       width: 16px;
       height: 16px;
+      border-radius: 100px;
+      transition: background-color .3s ease-in-out;
+
+      &:hover {
+        background-color: var(--color-biloba);
+      }
+
+      &:active {
+        color: var(--color-light);
+        background-color: var(--color-primary);
+      }
     }
 
     &:focus {

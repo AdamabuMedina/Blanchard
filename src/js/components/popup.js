@@ -66,7 +66,7 @@ function popup_open(item) {
       body_lock_add(500);
     }
     item.classList.add('_active');
-    focusManager.capture(item)
+    // focusManager.capture(item)
   }
 }
 
