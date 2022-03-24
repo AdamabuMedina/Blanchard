@@ -1,3 +1,5 @@
 # Blanchard
 
-# Итоговый проект от школы skillbox.ru
+# Курсовая работа от школы skillbox.ru
+
+# https://adamabumedina.github.io/Blanchard/index.html
