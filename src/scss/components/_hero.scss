@@ -11,7 +11,7 @@
       padding-bottom: 113px;
     }
 
-    @include mobile {
+    @include small-mobile {
       padding-top: 78px;
       padding-bottom: 43px;
       text-align: center;
@@ -38,7 +38,7 @@
       letter-spacing: 1px;
     }
 
-    @include mobile {
+    @include small-mobile {
       margin-bottom: 12px;
       padding: 0 18px;
       font-size: 32px;
@@ -61,7 +61,7 @@
       max-width: 670px;
     }
 
-    @include mobile {
+    @include small-mobile {
       margin-right: auto;
       margin-bottom: 40px;
       margin-left: auto;
@@ -88,7 +88,7 @@
       border-color: var(--color-biloba);
       color: var(--color-light);
 
-      @include mobile {
+      @include small-mobile {
         border-color: var(--color-primary);
         color: var(--color-light);
         background-color: var(--color-primary);
@@ -99,7 +99,7 @@
       background-color: var(--color-purple);
     }
 
-    @include mobile {
+    @include small-mobile {
       font-size: 12px;
       line-height: 16px;
     }
@@ -136,7 +136,7 @@
       background-image: url("../img/hero/hero-img1-768.jpg");
     }
 
-    @include mobile {
+    @include small-mobile {
       background-image: url("../img/hero/hero-img1-320.jpg");
     }
   }
@@ -152,7 +152,7 @@
       background-image: url("../img/hero/hero-img2-768.jpg");
     }
 
-    @include mobile {
+    @include small-mobile {
       background-image: url("../img/hero/hero-img2-320.jpg");
     }
   }
@@ -168,7 +168,7 @@
       background-image: url("../img/hero/hero-img3-768.jpg");
     }
 
-    @include mobile {
+    @include small-mobile {
       background-image: url("../img/hero/hero-img3-320.jpg");
     }
   }
@@ -184,7 +184,7 @@
       background-image: url("../img/hero/hero-img1-768.jpg");
     }
 
-    @include mobile {
+    @include small-mobile {
       background-image: url("../img/hero/hero-img1-320.jpg");
     }
   }
@@ -200,7 +200,7 @@
       background-image: url("../img/hero/hero-img2-768.jpg");
     }
 
-    @include mobile {
+    @include small-mobile {
       background-image: url("../img/hero/hero-img2-320.jpg");
     }
   }
@@ -216,7 +216,7 @@
       background-image: url("../img/hero/hero-img3-768.jpg");
     }
 
-    @include mobile {
+    @include small-mobile {
       background-image: url("../img/hero/hero-img3-320.jpg");
     }
   }

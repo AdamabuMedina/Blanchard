@@ -19,7 +19,7 @@
     background-color: currentColor;
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 
-    @include mobile {
+    @include small-mobile {
       height: 2px;
     }
   }
@@ -43,7 +43,7 @@
     transform: translateY(-50%);
     transition: transform 0.3s ease-in-out;
 
-    @include mobile {
+    @include small-mobile {
       height: 2px;
     }
   }
@@ -52,7 +52,7 @@
     display: block;
   }
 
-  @include mobile {
+  @include small-mobile {
     width: 20px;
     height: 15px;
   }

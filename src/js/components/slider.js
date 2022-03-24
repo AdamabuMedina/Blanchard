@@ -107,12 +107,7 @@ const sliderPartners = new Swiper(partnersSliders, {
     //   slidesPerView: 1,
     //   slidesPerGroup: 1,
     // },
-    // 500: {
-    //   spaceBetween: 40,
-    //   slidesPerView: 2,
-    //   slidesPerGroup: 2,
-    // },
-    600: {
+    576: {
       spaceBetween: 36,
       slidesPerView: 2,
       slidesPerGroup: 2,

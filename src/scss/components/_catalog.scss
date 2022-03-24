@@ -4,6 +4,10 @@
     max-height: 2360px;
   }
 
+  @include mobile {
+    max-height: 2000px;
+  }
+
   &__title {
     @include tablet {
       margin-bottom: 21px;

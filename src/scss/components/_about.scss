@@ -4,7 +4,7 @@
     width: 100%;
     max-width: 1086px;
 
-    @include mobile {
+    @include small-mobile {
       font-size: 14px;
     }
   }

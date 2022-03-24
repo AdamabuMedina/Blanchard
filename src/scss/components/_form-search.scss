@@ -54,7 +54,7 @@
         width: 29px;
         height: 29px;
 
-        @include mobile {
+        @include small-mobile {
           width: 16px;
           height: 16px;
         }
@@ -79,7 +79,7 @@
       border-color: currentColor;
     }
 
-    @include mobile {
+    @include small-mobile {
       color: var(--color-light);
     }
   }
@@ -108,7 +108,7 @@
         width: calc(100% - 92px);
       }
 
-      @include mobile {
+      @include small-mobile {
         left: 76px;
         bottom: 26px;
         width: calc(100% - 140px);
@@ -124,7 +124,7 @@
       width: calc(100% - 100px);
     }
 
-    @include mobile {
+    @include small-mobile {
       padding-right: 15px;
       padding-left: 49px;
       width: 100%;
@@ -143,7 +143,7 @@
       left: 50px;
     }
 
-    @include mobile {
+    @include small-mobile {
       position: absolute;
       left: 0;
       height: 120px;

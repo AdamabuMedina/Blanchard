@@ -1,11 +1,4 @@
 /* stylelint-disable */
-
-@mixin large {
-  @media (max-width: (992px)) {
-    @content;
-  }
-}
-
 @mixin full-desktop {
   @media (max-width: (1705px)) {
     @content;
@@ -30,14 +23,34 @@
   }
 }
 
+
+@mixin large {
+  @media (max-width: (992px)) {
+    @content;
+  }
+}
+
+
 @mixin small-tablet {
   @media (max-width: (768px)) {
     @content;
   }
 }
 
+@mixin big-mobile {
+  @media (min-width: (576px)) {
+    @content;
+  }
+}
+
 @mixin mobile {
   @media (max-width: (576px)) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media (max-width: (320px)) {
     @content;
   }
 }

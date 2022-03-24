@@ -47,6 +47,11 @@
       @include tablet {
         margin-right: 20px;
       }
+
+      @include big-mobile {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
 
     &--tel {
