@@ -55,8 +55,8 @@
         height: 29px;
 
         @include small-mobile {
-          width: 16px;
-          height: 16px;
+          width: 18px;
+          height: 19px;
         }
       }
     }
@@ -126,14 +126,14 @@
 
     @include small-mobile {
       padding-right: 15px;
-      padding-left: 49px;
+      padding-left: 45px;
       width: 100%;
     }
   }
 
   &--showed {
     left: calc(100% - 25.5vw - 47px);
-    transition: left 0.3s;
+    transition: left 0.3s ease-in-out;
 
     input {
       opacity: 0.85;

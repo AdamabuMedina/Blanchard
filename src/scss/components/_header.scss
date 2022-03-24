@@ -70,6 +70,12 @@
       left: 50%;
       transform: translateX(-50%);
     }
+
+    @include small-mobile {
+      margin-right: 0;
+      display: inline-block;
+      margin-top: 4px;
+    }
   }
 }
 

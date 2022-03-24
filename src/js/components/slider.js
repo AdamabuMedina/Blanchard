@@ -102,11 +102,11 @@ const sliderPartners = new Swiper(partnersSliders, {
     prevEl: '.partners__slider-prev',
   },
   breakpoints: {
-    // 320: {
-    //   spaceBetween: 50,
-    //   slidesPerView: 1,
-    //   slidesPerGroup: 1,
-    // },
+    320: {
+      spaceBetween: 50,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
     576: {
       spaceBetween: 36,
       slidesPerView: 2,

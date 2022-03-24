@@ -26,17 +26,27 @@
 
   &::before {
     top: 0;
+
+    @include small-mobile {
+      width: 123%;
+      top: -2px;
+    }
   }
 
   &::after {
     width: 68%;
     top: calc(100% - var(--burger-line-height));
+
+    @include small-mobile {
+      top: 14px;
+      width: 48%;
+    }
   }
 
   &__line {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 49%;
     width: 78%;
     height: var(--burger-line-height);
     background-color: currentColor;
@@ -62,6 +72,7 @@
       top: 50%;
       transform: rotate(45deg);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      width: 100%;
     }
 
     &::after {

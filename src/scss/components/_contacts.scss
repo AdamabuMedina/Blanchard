@@ -26,6 +26,11 @@
     &-title {
       font-weight: 600;
       font-size: 24px;
+
+      @include small-mobile {
+        position: absolute;
+        font-size: 18px;
+      }
     }
 
     &-span {
@@ -35,6 +40,11 @@
       @include tablet {
         display: inline-block;
         margin-top: 3px;
+      }
+
+      @include small-mobile {
+        margin-top: 20px;
+        font-size: 14px;
       }
     }
 
@@ -47,7 +57,18 @@
       margin-right: 0;
       margin-bottom: 30px;
     }
+
+    @include small-mobile {
+      position: relative;
+      margin-bottom: 8px;
+    }
   }
+
+  @include small-mobile {
+    border: none;
+    padding-bottom: 21px;
+  }
+
 }
 
 .contacts-social {
@@ -61,6 +82,11 @@
     font-size: 24px;
     line-height: 32px;
     color: var(--color-mine-shaft);
+
+    @include small-mobile {
+      font-weight: 400;
+      font-size: 18px;
+    }
   }
 
   &__list {
@@ -72,11 +98,20 @@
     @include tablet {
       margin-left: -1px;
     }
+
+    @include small-mobile {
+      margin-top: 8px;
+      margin-left: 1px;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-right: 20px;
+
+      @include small-mobile {
+        margin-right: 22px;
+      }
     }
   }
 
@@ -97,10 +132,20 @@
       transform: translateY(-50%);
       fill: var(--color-light);
       object-fit: cover;
+
     }
 
     &--whatsapp {
       background-color: #30BF39;
+
+      svg {
+        @include small-mobile {
+          width: 29px;
+          height: 29px;
+          left: 10px;
+          top: 48%;
+        }
+      }
     }
 
     &--telegram {
@@ -109,6 +154,13 @@
       svg {
         left: 7px;
         top: 21px;
+
+        @include small-mobile {
+          width: 28px;
+          height: 23px;
+          left: 8px;
+          top: 26px;
+        }
       }
     }
 
@@ -120,6 +172,11 @@
       outline: 2px solid var(--color-primary);
       border: 1px solid var(--color-primary);
       opacity: 1;
+    }
+
+    @include small-mobile {
+      width: 48px;
+      height: 48px;
     }
   }
 }

@@ -1,6 +1,10 @@
 .project {
   &__title {
     margin-bottom: 22px;
+
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
 
   &__text {
@@ -13,6 +17,11 @@
 
     @include small-tablet {
       margin-bottom: 27px;
+    }
+
+    @include small-mobile {
+      margin-top: 15px;
+      margin-bottom: 10px;
     }
   }
 

@@ -1,16 +1,11 @@
 .catalog {
-
-  @include small-tablet {
-    max-height: 2360px;
-  }
-
-  @include mobile {
-    max-height: 2000px;
-  }
-
   &__title {
     @include tablet {
       margin-bottom: 21px;
+    }
+
+    @include small-mobile {
+      margin-bottom: 15px;
     }
   }
 
@@ -111,6 +106,10 @@
       margin-bottom: 25px;
       max-height: 180px;
     }
+
+    @include small-mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__info-name {
@@ -159,7 +158,18 @@
     &:hover {
       color: var(--color-purple);
     }
+  }
 
+  @include small-tablet {
+    max-height: 2360px;
+  }
+
+  @include mobile {
+    max-height: 2000px;
+  }
+
+  @include small-mobile {
+    max-height: 2288px;
   }
 }
 

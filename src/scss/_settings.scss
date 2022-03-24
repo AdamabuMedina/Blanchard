@@ -224,6 +224,11 @@ a {
     @include tablet {
       padding-bottom: 77px;
     }
+
+    @include small-mobile {
+      padding-top: 53px;
+      padding-bottom: 49px;
+    }
   }
 
   &--catalog {
@@ -256,6 +261,11 @@ a {
     @include small-tablet {
       padding-bottom: 78px;
     }
+
+    @include small-mobile {
+      padding-top: 39px;
+      padding-bottom: 10px;
+    }
   }
 
   &--contacts {
@@ -265,6 +275,11 @@ a {
     @include tablet {
       padding-top: 5px;
       padding-bottom: 4px;
+    }
+
+    @include small-mobile {
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 

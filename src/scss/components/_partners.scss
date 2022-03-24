@@ -12,6 +12,10 @@
     @include tablet {
       padding: 0 53px;
     }
+
+    @include tablet {
+      padding: 0 47px;
+    }
   }
 
   &-title {
@@ -29,6 +33,11 @@
     @include small-tablet {
       margin-bottom: 29px;
     }
+
+    @include small-mobile {
+      font-size: 18px;
+      margin-bottom: 11px;
+    }
   }
 
   &-next {
@@ -37,6 +46,10 @@
     top: 50%;
     z-index: 10;
     transform: translateY(-50%);
+
+    @include small-mobile {
+      right: 0;
+    }
   }
 
   &-prev {
@@ -46,6 +59,10 @@
     z-index: 10;
     transform: translateY(-50%);
     transform: rotate(180deg);
+
+    @include small-mobile {
+      top: 27%;
+    }
   }
 
   &-btn {
@@ -116,6 +133,11 @@
       max-width: calc((100% - 40px) / 2);
       height: 106px;
     }
+
+    @include small-mobile {
+      max-width: 99%;
+      height: 63px;
+    }
   }
 
   &-img-wrapper {
@@ -148,6 +170,10 @@
 
     @include small-tablet {
       max-height: 52px
+    }
+
+    @include small-mobile {
+      max-height: 25px
     }
   }
 }

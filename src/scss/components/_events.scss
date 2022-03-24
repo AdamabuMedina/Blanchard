@@ -51,7 +51,11 @@
   }
 
   &__title {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+
+    @include small-mobile {
+      margin-bottom: 14px;
+    }
   }
 
   &__next {
@@ -75,10 +79,6 @@
     display: flex;
     width: 100%;
     height: auto;
-
-    // @include tablet {
-    //   margin-bottom: 23px;
-    // }
   }
 
   &__article {
@@ -91,6 +91,10 @@
 
   &__figure {
     margin: 0 0 13px;
+
+    @include small-mobile {
+      margin-bottom: 0;
+    }
   }
 
   &__image {
@@ -110,10 +114,6 @@
     @include tablet {
       max-width: 317px !important;
     }
-
-    // @include large {
-    //   width: 317px !important;
-    // }
   }
 
   &__item {
@@ -141,8 +141,8 @@
         margin-bottom: 0;
       }
 
-      @include small-tablet {
-        margin-bottom: 55px;
+      @include small-mobile {
+        margin-bottom: 47px;
       }
     }
 
@@ -157,6 +157,10 @@
       @include tablet {
         margin-top: 0;
       }
+
+      @include small-mobile {
+        margin-top: -10px;
+      }
     }
 
     &-text {
@@ -169,6 +173,10 @@
 
       @include tablet {
         margin-top: 8px
+      }
+
+      @include small-mobile {
+        margin-top: 5px;
       }
     }
 
@@ -188,6 +196,10 @@
       &:focus {
         color: var(--color-mine-shaft);
       }
+
+      @include small-mobile {
+        margin-left: 6px;
+      }
     }
 
     @include tablet {
@@ -198,6 +210,12 @@
     @include small-tablet {
       padding-left: 34px;
       padding-bottom: 45px;
+    }
+
+    @include small-mobile {
+      padding-left: 22px;
+      padding-bottom: 31px;
+      justify-content: space-around;
     }
   }
 
@@ -218,6 +236,11 @@
         align-items: flex-end;
         padding-left: 0px;
         padding-right: 33px;
+      }
+
+      @include small-mobile {
+        padding-right: 17px;
+        margin-top: 17px;
       }
     }
 
@@ -246,6 +269,10 @@
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 0;
+
+  @include small-mobile {
+    bottom: 10px;
+  }
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,

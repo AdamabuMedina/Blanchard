@@ -141,6 +141,10 @@
       left: 0;
       top: 100px;
       transition: left 0.3s ease-in-out, top 0.3s ease-in-out;
+
+      @include small-mobile {
+        top: 45px;
+      }
     }
 
     @include mobile {

@@ -48,6 +48,10 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
+  @include small-mobile {
+    margin-top: 40px;
+  }
 }
 
 .gallery__slide {
@@ -183,6 +187,10 @@
     margin: 0;
     margin-top: 20px;
     justify-content: center;
+  }
+
+  @include small-mobile {
+    margin-top: 16px;
   }
 }
 

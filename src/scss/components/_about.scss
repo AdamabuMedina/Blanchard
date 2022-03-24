@@ -13,5 +13,9 @@
     @include tablet {
       margin-bottom: 21px;
     }
+
+    @include small-mobile {
+      margin-bottom: 15px
+    }
   }
 }

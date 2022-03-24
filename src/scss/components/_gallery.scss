@@ -43,6 +43,10 @@
         position: initial;
         margin-top: 50px
       }
+
+      @include small-mobile {
+        margin-top: 37px;
+      }
     }
   }
 
@@ -50,11 +54,19 @@
     @include tablet {
       height: 330px;
     }
+
+    @include small-mobile {
+      height: 367px;
+    }
   }
 
   &__title {
     margin-bottom: 28px;
     color: var(--color-light);
+
+    @include small-mobile {
+      margin-bottom: 21px;
+    }
   }
 
   .choices {
@@ -64,6 +76,10 @@
     min-height: 40px;
     margin-bottom: 40px;
     transition: transform .3s ease-in-out;
+
+    @include small-mobile {
+      margin-bottom: 0;
+    }
   }
 
   .choices__inner {

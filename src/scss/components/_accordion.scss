@@ -78,6 +78,11 @@
     @include mobile {
       padding: 18px 40px 22px 0;
     }
+
+    @include small-mobile {
+      padding-top: 25px;
+      padding-bottom: 26px;
+    }
   }
 
   .catalog__accordion-btn--active {
@@ -141,6 +146,11 @@
       padding-bottom: 60px;
       column-count: 1;
       column-gap: 0px;
+    }
+
+    @include small-mobile {
+      padding-top: 19px;
+      padding-bottom: 20px;
     }
   }
 

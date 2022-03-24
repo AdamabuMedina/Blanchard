@@ -52,6 +52,10 @@
         margin-right: 0;
         margin-bottom: 20px;
       }
+
+      @include small-mobile {
+        margin-bottom: 20px;
+      }
     }
 
     &--tel {
@@ -62,10 +66,19 @@
       @include small-tablet {
         margin-right: 0;
       }
+
+      @include small-mobile {
+        margin-bottom: 8px;
+      }
     }
 
     @include large {
       width: 323px;
+    }
+
+    @include small-mobile {
+      width: 290px;
+      max-height: 40px;
     }
   }
 
@@ -103,6 +116,13 @@
       width: 317px;
       margin-top: 12px;
     }
+
+    @include small-mobile {
+      width: 290px;
+      max-height: 40px;
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 
   @include full-desktop {
@@ -116,6 +136,10 @@
 
   @include large {
     flex-wrap: wrap;
+  }
+
+  @include small-mobile {
+    margin-bottom: 20px;
   }
 
 }
