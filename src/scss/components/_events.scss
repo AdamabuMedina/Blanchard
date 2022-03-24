@@ -115,19 +115,27 @@
   &__item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: flex-start;
     padding-bottom: 39px;
     padding-left: 50px;
-    padding-right: 50px;
     height: 100%;
     flex-basis: 100%;
 
     &-info {
       display: flex;
       flex-direction: column;
+      padding-right: 50px;
       margin-bottom: 66px;
       width: 100%;
+
+      @include big-tablet {
+        padding-right: 14px;
+      }
+
+      @include tablet {
+        margin-bottom: 0;
+      }
     }
 
     &-title {
@@ -139,7 +147,7 @@
       color: var(--color-mine-shaft);
 
       @include tablet {
-        margin-top: 3px;
+        margin-top: 0;
       }
     }
 
@@ -172,23 +180,11 @@
       &:focus {
         color: var(--color-mine-shaft);
       }
-
-      @include tablet {
-        left: 33px;
-        bottom: 48px;
-      }
-    }
-
-    @include big-tablet {
-      padding: 0 34px;
-      height: 483px;
     }
 
     @include tablet {
-      display: flex;
-      flex-direction: column;
-      padding: 0 24px;
-      height: 479px;
+      padding-left: 34px;
+      padding-bottom: 35px;
     }
   }
 
@@ -206,7 +202,9 @@
       color: var(--color-dusty-gray);
 
       @include tablet {
-        text-align: end;
+        align-items: flex-end;
+        padding-left: 0px;
+        padding-right: 33px;
       }
     }
 
@@ -239,7 +237,14 @@
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
+  margin: 0;
+  margin-top: 30px;
+  width: 10px;
+  height: 10px;
+
+  &:not(:last-child) {
+    margin-right: 17px;
+  }
 }
 
 .swiper-pagination-bullet {
