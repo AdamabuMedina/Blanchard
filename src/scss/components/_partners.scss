@@ -8,10 +8,10 @@
     @include full-desktop {
       padding: 0 50px;
     }
-  }
 
-  &-wrapper {
-    display: flex;
+    @include tablet {
+      padding: 0 53px;
+    }
   }
 
   &-title {
@@ -21,6 +21,10 @@
     font-size: 24px;
     line-height: 32px;
     color: var(--color-mine-shaft);
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
   }
 
   &-next {
@@ -41,8 +45,6 @@
   }
 
   &-btn {
-    @include flex-all-center;
-
     border: none;
     cursor: pointer;
     border-radius: 100%;
@@ -80,16 +82,18 @@
     }
   }
 
-  &-img-wrapper {
+  &-item {
     @include flex-all-center;
 
-    width: 100%;
-    max-width: 448px;
-    height: 148px;
-    background: var(--color-light);
     border: 1px solid var(--color-silver);
+    max-width: calc((100% - 106px) / 3);
+    height: 150px;
+    cursor: pointer;
+    background: var(--color-light);
+    transition: all 0.3s ease-in-out;
 
-    &:hover>.partners__slider-img {
+
+    &:hover .partners__slider-img {
       filter: none;
       opacity: 1;
       transition: opacity .3s;
@@ -99,13 +103,31 @@
       border: 1px solid var(--color-primary);
     }
 
-    @include big-tablet {
-      max-width: 384px;
-      height: 128px;
+    @include tablet {
+      height: 126px;
+      max-width: calc((100% - 55px) / 2);
+    }
+
+    @include small-tablet {
+      max-width: calc((100% - 40px) / 2);
+      height: 106px;
+    }
+  }
+
+  &-img-wrapper {
+    @include flex-all-center;
+
+    padding: 40px 10px;
+    height: 100%;
+    width: 100%;
+
+    @include small-tablet {
+      padding: 10px 5px;
     }
   }
 
   &-img {
+    display: block;
     filter: grayscale(100%);
     opacity: 0.5;
 
@@ -113,6 +135,15 @@
       filter: none;
       opacity: 1;
       transition: opacity .3s ease-in-out;
+    }
+
+    @include tablet {
+      max-height: 49px;
+      max-width: 80%;
+    }
+
+    @include small-tablet {
+      max-height: 52px
     }
   }
 }

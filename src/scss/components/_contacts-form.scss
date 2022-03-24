@@ -54,6 +54,10 @@
         margin-right: 20px;
       }
     }
+
+    @include large {
+      width: 323px;
+    }
   }
 
   .just-validate-error-field {
@@ -85,6 +89,11 @@
     @include tablet {
       width: 343px;
     }
+
+    @include large {
+      width: 317px;
+      margin-top: 10px;
+    }
   }
 
   @include full-desktop {
@@ -94,6 +103,10 @@
   @include big-desktop {
     margin-right: 0;
     margin-bottom: 30px;
+  }
+
+  @include large {
+    flex-wrap: wrap;
   }
 
 }

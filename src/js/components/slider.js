@@ -71,13 +71,13 @@ const sliderEvents = new Swiper(eventsSliders, {
       slidesPerGroup: 1,
     },
     769: {
-      spaceBetween: 50,
+      spaceBetween: 34,
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
-    993: {
+    834: {
       spaceBetween: 27,
-      slidesPerView: 2,
+      slidesPerView: 3,
       slidesPerGroup: 3,
     },
     1025: {
@@ -95,34 +95,37 @@ const sliderEvents = new Swiper(eventsSliders, {
 const partnersSliders = document.querySelector(".partners__slider")
 
 const sliderPartners = new Swiper(partnersSliders, {
+  longSwipes: false,
+  loop: false,
   navigation: {
     nextEl: '.partners__slider-next',
     prevEl: '.partners__slider-prev',
   },
-  slidesPerView: 3,
-  spaceBetween: 50,
-  slidesPerColumnFill: 'row',
-  updateOnWindowResize: true,
-  slidesPerColumn: 1,
   breakpoints: {
-    //   500: {
-    //     slidesPerColumnFill: 'row',
-    //     // slidesPerGroup: 1,
-    //     slidesPerView: 1,
-    //     slidesPerColumn: 0,
-    //     updateOnWindowResize: true,
-    //   },
-    720: {
-      slidesPerView: 2,
-      slidesPerColumn: 1,
-      spaceBetween: 34,
-    },
-    1024: {
-      slidesPerView: 2,
-      slidesPerColumn: 1,
-    },
-    1650: {
+    // 320: {
+    //   spaceBetween: 50,
+    //   slidesPerView: 1,
+    //   slidesPerGroup: 1,
+    // },
+    // 500: {
+    //   spaceBetween: 40,
+    //   slidesPerView: 2,
+    //   slidesPerGroup: 2,
+    // },
+    // 600: {
+    //   spaceBetween: 50,
+    //   slidesPerView: 2,
+    //   slidesPerGroup: 2,
+    // },
+    769: {
       spaceBetween: 50,
-    }
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    1025: {
+      spaceBetween: 50,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
   }
 })
