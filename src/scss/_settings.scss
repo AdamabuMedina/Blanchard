@@ -208,23 +208,7 @@ a {
   padding-top: 87px;
   padding-bottom: 69px;
 
-  &--events {
-    padding-top: 18px;
 
-    @include tablet {
-      padding-top: 19px;
-    }
-  }
-
-  &--project {
-    padding-top: 85px;
-    padding-bottom: 80px;
-
-    @include tablet {
-      padding-top: 82px;
-      padding-bottom: 80px;
-    }
-  }
 
   &--about {
     @include tablet {
@@ -245,6 +229,32 @@ a {
   &--catalog {
     @include tablet {
       padding-top: 85px;
+    }
+
+    @include small-tablet {
+      padding-bottom: 55px;
+    }
+  }
+
+  &--events {
+    padding-top: 18px;
+
+    @include tablet {
+      padding-top: 19px;
+    }
+  }
+
+  &--project {
+    padding-top: 85px;
+    padding-bottom: 80px;
+
+    @include tablet {
+      padding-top: 82px;
+      padding-bottom: 80px;
+    }
+
+    @include small-tablet {
+      padding-bottom: 78px;
     }
   }
 

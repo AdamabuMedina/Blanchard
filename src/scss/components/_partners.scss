@@ -25,6 +25,10 @@
     @include tablet {
       margin-bottom: 24px;
     }
+
+    @include small-tablet {
+      margin-bottom: 29px;
+    }
   }
 
   &-next {

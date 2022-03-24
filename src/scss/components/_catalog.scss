@@ -1,4 +1,9 @@
 .catalog {
+
+  @include small-tablet {
+    max-height: 2360px;
+  }
+
   &__title {
     @include tablet {
       margin-bottom: 21px;
@@ -57,7 +62,7 @@
     transition: transform 3s ease-in-out;
 
     @include small-tablet {
-      position: absolute;
+      position: initial;
     }
 
     .catalog__info-block--hide {
@@ -91,6 +96,11 @@
     @include tablet {
       max-width: 437px;
       max-height: 274px;
+    }
+
+    @include small-tablet {
+      max-width: 100%;
+      max-height: 100%;
     }
 
     @include mobile {

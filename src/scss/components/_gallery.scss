@@ -9,6 +9,10 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__left {
@@ -34,12 +38,17 @@
       @include tablet {
         bottom: 48px;
       }
+
+      @include small-tablet {
+        position: initial;
+        margin-top: 50px
+      }
     }
   }
 
   &__img {
     @include tablet {
-      height: 315px;
+      height: 330px;
     }
   }
 

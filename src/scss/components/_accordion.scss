@@ -44,6 +44,12 @@
       background-size: 18px 18px;
       transition: background-color .3s ease-in-out, transform .3s ease-in-out;
 
+
+      @include small-tablet {
+        right: 0;
+        top: 31px;
+      }
+
       @include mobile {
         width: 30px;
         height: 30px;
@@ -63,6 +69,10 @@
 
     &:hover::before {
       background-color: var(--color-biloba);
+    }
+
+    @include small-tablet {
+      padding: 42px 0 44px 0;
     }
 
     @include mobile {
@@ -121,9 +131,9 @@
     }
 
     @include small-tablet {
-      padding-bottom: 68px;
+      padding-bottom: 57px;
       column-count: 3;
-      column-gap: 20px;
+      column-gap: 58px;
       height: 100%;
     }
 
@@ -182,6 +192,7 @@
   @include small-tablet {
     width: 100%;
     max-width: 100%;
+    margin-left: 0;
   }
 }
 

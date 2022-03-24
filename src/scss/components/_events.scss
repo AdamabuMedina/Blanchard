@@ -107,6 +107,10 @@
       max-width: 290px !important;
     }
 
+    @include tablet {
+      max-width: 317px !important;
+    }
+
     // @include large {
     //   width: 317px !important;
     // }
@@ -135,6 +139,10 @@
 
       @include tablet {
         margin-bottom: 0;
+      }
+
+      @include small-tablet {
+        margin-bottom: 55px;
       }
     }
 
@@ -185,6 +193,11 @@
     @include tablet {
       padding-left: 34px;
       padding-bottom: 35px;
+    }
+
+    @include small-tablet {
+      padding-left: 34px;
+      padding-bottom: 45px;
     }
   }
 
